@@ -1,0 +1,5 @@
+.woocommerce-loop-product__title {
+  font-sixe: 24px;
+  color: #333333; }
+
+/*# sourceMappingURL=woocommerce.style.map */

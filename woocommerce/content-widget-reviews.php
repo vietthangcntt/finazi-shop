@@ -1,0 +1,30 @@
+<?php
+/**
+ * The template for displaying product widget entries.
+ *
+ * This template can be overridden by copying it to yourtheme/woocommerce/content-widget-reviews.php
+ * 
+ * HOWEVER, on occasion WooCommerce will need to update template files and you
+ * (the theme developer) will need to copy the new files to your theme to
+ * maintain compatibility. We try to do this as little as possible, but it does
+ * happen. When this occurs the version of the template file will be bumped and
+ * the readme will list any important changes.
+ *
+ * @see     https://docs.woocommerce.com/document/template-structure/
+ * @package WooCommerce/Templates
+ * @version 3.4.0
+ */
+
+defined( 'ABSPATH' ) || exit;
+
+?>
+<li>
+	<?php do_action( 'woocommerce_widget_product_review_item_start', $args ); ?>
+
+	<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">
+		<?php echo $product->get_image(); ?>
+		<span class="product-title"><?php echo $product->get_name(); ?></span>
+	</a>
+	<?php echo $product->get_price_html(); ?>
+	<?php do_action( 'woocommerce_widget_product_review_item_end', $args ); ?>
+</li>

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,gCAAiC;EAChC,SAAS,EAAE,IAAI;EACf,KAAK,ECDQ,OAAO",
+"sources": ["../sass/_shop.scss","../sass/_variables.scss"],
+"names": [],
+"file": "woocommerce.style"
+}
